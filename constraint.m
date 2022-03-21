@@ -1,7 +1,7 @@
 function hh = constraint(X)
     X1=X(:,1);
     X2=X(:,2);
-    cons1 = X1+2.*X2-2000;
+    cons1 = X1+2.*X2-2000
     h1=find(cons1>0);
     X(h1,:)=[];
     

@@ -2,16 +2,16 @@ format short
 clear all
 clc
 
-C=[2 3 4 7];
-A=[2 3 -1 4; 1 -2 6 -7];
-b= [8;-3];
+C=[2 3 0 0];
+A=[2 1 1 0; 1 2 0 1];
+b= [4; 5];
 
-n=size(A,2) %variables
-m=size(A,1) %constraints
+n = size(A,2); %variables
+m = size(A,1); %constraints
 
 nv= nchoosek(n,m);
-t=nchoosek(1:n,m);
-
+t= nchoosek(1:n,m)
+ 
 sol=[];
 if n>=m
 for i=1:nv
