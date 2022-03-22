@@ -53,7 +53,7 @@ simpTable.Properties.VariableNames(1:size(zcj,2)) = {'X_1','x_2','x_3','S_1','S_
 
 BFS = zeros(1,size(A,2));
 BFS(BV)=A(:,end);
-BFS(end)=sum(BFS.*Cost)
+BFS(end)=zjcj(end)
 else
     disp('Optimal Solution Reached')
     run=0;
